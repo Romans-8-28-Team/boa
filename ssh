@@ -1,0 +1,37 @@
+Creating and using an ssh key to push to git hub.
+
+if you have not cloned the repo as yet.
+1. clone repo
+2. cd into directory cloned
+3. git init
+4. create user:
+git config --global user.name "your name here"
+git config --global user.email "your email here"
+5. create link using: "git remote add 'alias you choose' 'ssh link for repo'
+6. git pull "alias you chose" master
+7. create file wyou want
+8 git add .
+9. git commit -m "commit mes4sage"
+10. git push "alias you chose" master
+11. you did it!
+12. let me know if you have questions.
+
+If you have already cloned the repo:
+1. create link using: "git remote add 'ssh alias you choose' 'ssh link for repo'
+2. ls ~/.ssh
+3. if you already have an existing key called "key name" than cat the file using "cat 'filename'"
+4. if you do not have the key then run this command "ssh-keygen"
+5. cat "file name"
+6. copy entire key
+7. got to GitHub account and go to settings
+8. select SSH GPG keys
+9. selecte new SSH key
+10. choose key name and then paste key below
+11. select add SSH Key
+12. git pull "alias you chose" master
+13. create file wyou want
+14. git add .
+15. git commit -m "commit mes4sage"
+16. git push "alias you chose" master
+17. you did it!
+18. let me know if you have questions.
