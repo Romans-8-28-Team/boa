@@ -5,7 +5,7 @@ Steps to push to a repo:
 4. create user:
 git config --global user.name "your name here"
 git config --global user.email "your email here"
-5. create link using: "git remote add 'alias you choose' 'http or ssh link for repo'
+5. create link using: "git remote add 'alias you choose' 'http link for repo'
 6. git pull "alias you chose" master
 7. create file wyou want
 8 git add .
