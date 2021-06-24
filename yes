@@ -1,14 +1,15 @@
 Steps to push to a repo:
 1. clone repo
 2. cd into directory cloned
-3. create user:
+3. git init
+4. create user:
 git config --global user.name "your name here"
 git config --global user.email "your email here"
-3. create link using: "git remote add 'alias you choose' 'http or ssh link for repo'
-4. git pull "alias you chose" master
-5. create file wyou want
-6 git add .
-7. git commit -m "commit message"
-8. git push "alias you chose" master
-9. you did it!
-10. let me know if you have questions.
+5. create link using: "git remote add 'alias you choose' 'http or ssh link for repo'
+6. git pull "alias you chose" master
+7. create file wyou want
+8 git add .
+9. git commit -m "commit mes4sage"
+10. git push "alias you chose" master
+11. you did it!
+12. let me know if you have questions.
