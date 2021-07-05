@@ -1,5 +1,19 @@
+Start in maven server
 #clone repo or write code
-git clone 
-#create package in maven
+git clone https://github.com/Sheckle/maven-web-app
+cd mave-web-app
+#create package package maven
 mvn clean package
-scp -i key.pem target/*.war  ec2-user@tomcat-ip:/opt/tomcat/webapps/
+#create key in tomcat server and copy to maven server
+-in tomcat server
+  -- ssh-keygen
+  -- cat ~/.ssh/rsa_pub
+  --copy key
+-go back to maven server
+-cd maven-web-app
+-vi key.pem and paste key
+#secure copy war file to tomcat webapps directory
+scp -i key.pem target/*.war  ec2-user@paste-tomcat-ip-here:/opt/tomcat/webapps/
+#log into tomcat server via web browser
+publicip:8080
+enter login information and view deployment
