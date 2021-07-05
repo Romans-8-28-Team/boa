@@ -1,0 +1,5 @@
+#clone repo or write code
+git clone 
+#create package in maven
+mvn clean package
+scp -i key.pem target/*.war  ec2-user@tomcat-ip:/opt/tomcat/webapps/
