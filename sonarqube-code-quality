@@ -1,0 +1,16 @@
+#open maven and sonarqube server
+ got to sonarqube server cl
+#start sonarqube server
+sudo su - sonar
+sh sonar.sh start
+#go to maven server cl
+vi pom.xml
+under settings tab look for the followin:
+ <sonar.host.url>http:3.236.125.137:9000/</sonar.host.url>
+		<sonar.login>cada60850834c76e2c451568587ae543a7545f20</sonar.login>
+		<sonar.password>admin</sonar.password>
+  
+change the above ip to your sonarqube's with correct port
+change username and password to your sonarqube's    
+ mvn package sonar:sonar
+ view results in sonar gui via browser
